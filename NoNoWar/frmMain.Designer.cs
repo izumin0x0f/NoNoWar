@@ -1,6 +1,6 @@
 ﻿namespace NoNoWar
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// 必要なデザイナ変数です。
@@ -28,12 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.Yellow;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(408, 381);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmMain";
+            this.Text = "frmMain";
+            this.TransparencyKey = System.Drawing.Color.Yellow;
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
     }
 }
 

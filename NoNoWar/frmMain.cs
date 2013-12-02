@@ -8,11 +8,29 @@ using System.Windows.Forms;
 
 namespace NoNoWar
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //画像ファイルを読み込んで、Imageオブジェクトとして取得する
+            Image img = Image.FromFile(@"D:\workspace\NoNoWar\NoNoWar\Image\dance\a\dance-a-L1.png");
+            this.BackgroundImage = img;
+
+            this.Width = img.Width;
+            this.Height = img.Height;
+        }
+
+        private void setBackgroundImage() {
+            Image img = Image.FromFile(@"D:\workspace\NoNoWar\NoNoWar\Image\dance\a\dance-a-L1.png");
+            this.BackgroundImage = img;
+
+            this.Width = img.Width;
+            this.Height = img.Height;
         }
     }
 }
