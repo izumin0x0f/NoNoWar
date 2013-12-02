@@ -18,15 +18,11 @@ namespace NoNoWar
         private void Form1_Load(object sender, EventArgs e)
         {
             //画像ファイルを読み込んで、Imageオブジェクトとして取得する
-            Image img = Image.FromFile(@"D:\workspace\NoNoWar\NoNoWar\Image\dance\a\dance-a-L1.png");
-            this.BackgroundImage = img;
-
-            this.Width = img.Width;
-            this.Height = img.Height;
+            setBackgroundImage("D:\\workspace\\NoNoWar\\NoNoWar\\Image\\dance\\a\\dance-a-L1.png");
         }
 
-        private void setBackgroundImage() {
-            Image img = Image.FromFile(@"D:\workspace\NoNoWar\NoNoWar\Image\dance\a\dance-a-L1.png");
+        private void setBackgroundImage(string path) {
+            Image img = Image.FromFile(@path);
             this.BackgroundImage = img;
 
             this.Width = img.Width;
